@@ -16,6 +16,11 @@
     $ git clone git@github.com:Sergey-x/bo_energo.git
     ```
 
+* [Optional] Setup dev environment:
+    ```bash
+    $ poetry shell && poetry install
+    ```
+
 ### How to run:
 
 * inside docker:
@@ -23,15 +28,7 @@
     $ docker-compose up
     ```
 
-### OpenApi doc:
-
-#### To see documentation for available endpoints go:
-
-http://localhost:8088/swagger
-
-http://localhost:8088/openapi
-
-### Run tests:
+### Run tests (in dev environment):
 
 ```bash
 $ make test
@@ -48,4 +45,3 @@ With coverage:
 ```bash
 $ make test-cov
 ```
-
