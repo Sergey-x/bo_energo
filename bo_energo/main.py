@@ -2,6 +2,7 @@ import fastapi as fa
 from api import api_router
 from api.exc import validation_exception_handler
 from fastapi.exceptions import RequestValidationError
+from pydantic_core import ValidationError
 
 
 SWAGGER_PATH = "/swagger"
@@ -24,6 +25,7 @@ def get_app() -> fa.FastAPI:
     application.include_router(api_router)
 
     application.add_exception_handler(RequestValidationError, validation_exception_handler)
+    application.add_exception_handler(ValidationError, validation_exception_handler)
 
     return application
 
