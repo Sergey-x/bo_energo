@@ -1,4 +1,4 @@
-[![Coverage Status](https://coveralls.io/repos/github/Sergey-x/webtronics-test/badge.svg)](https://coveralls.io/github/Sergey-x/webtronics-test)
+[![Coverage Status](https://coveralls.io/repos/github/Sergey-x/bo_energo/badge.svg?branch=master)](https://coveralls.io/github/Sergey-x/bo_energo?branch=master)
 [![Python 3.10](https://img.shields.io/badge/python-3.10-blue.svg)](https://www.python.org/downloads/release/python-3100/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.95.2-009688.svg?style=flat&logo=FastAPI&logoColor=white)](https://fastapi.tiangolo.com)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
