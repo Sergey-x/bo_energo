@@ -38,3 +38,5 @@ jobs:
         run: |
           coverage run --source=bo_energo -m pytest bo_energo/
           coveralls
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
