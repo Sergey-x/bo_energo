@@ -5,10 +5,6 @@ from fastapi.exceptions import RequestValidationError
 from pydantic_core import ValidationError
 
 
-SWAGGER_PATH = "/swagger"
-OPENAPI_PATH = "/openapi"
-
-
 def get_app() -> fa.FastAPI:
     """
     Creates application and all dependable objects.
