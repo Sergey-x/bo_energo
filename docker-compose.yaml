@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+
+  bo_energo:
+    container_name: "bo_energo"
+    build:
+      context: .
+    volumes:
+      - ./bo_energo:/bo_energo
+    ports:
+      - "8088:8088"

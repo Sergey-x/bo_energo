@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "test"
+version = "0.1.0"
+description = "Test"
+authors = ["Sergey Rubnikovich <sergeyrubnikovich@yandex.ru>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.95.2"
+uvicorn = {extras = ["standard"], version = "^0.22.0"}
+orjson = "^3.8.12"
+python-dotenv = "^1.0.0"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+httpx = "^0.24.1"
+coveralls = "^3.3.1"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "^3.3.2"
+pytest = "^7.3.1"
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+pytest-cov = "^4.0.0"
+pytest-asyncio = "^0.21.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+
+[tool.isort]
+known_local_folder = "bo_energo"
+lines_after_imports = 2
+multi_line_output = 3
+line_length = 100
+include_trailing_comma = true
