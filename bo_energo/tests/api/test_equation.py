@@ -7,7 +7,7 @@ from schemas.task_1 import GetEquationSolutionResponseSchema
 class TestEquation:
     @classmethod
     def get_url(cls) -> str:
-        return "/task1/"
+        return "/roots/"
 
     @classmethod
     def make_params_dict(cls, a, b, c) -> dict:
