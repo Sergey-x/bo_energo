@@ -40,3 +40,7 @@ jobs:
           coveralls
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Restart container
+        run: |
+          docker compose up -d --build
