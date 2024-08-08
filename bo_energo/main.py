@@ -12,7 +12,7 @@ def get_app() -> fa.FastAPI:
     description = "Тестовое."
 
     application = fa.FastAPI(
-        title="БО ЭНЕРГО",
+        title="БО-ЭНЕРГО",
         description=description,
         version="0.1.0",
     )
